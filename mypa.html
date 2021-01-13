@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *,html,body{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .web{
+            width: 1024px;
+            margin: 0 auto;
+            display: flex;
+            flex-flow: row wrap;
+            position: relative;
+        }
+        .web div{
+            min-width: 150px;
+        }
+        .hd{
+            width: 100%;
+            background-color: black;
+            color: white;
+            height: 50px;
+            top: 0;
+            position: sticky;
+        }
+        li{
+           list-style: none;
+        }
+        ul{
+            display: flex;
+            justify-content: space-around;
+        }
+        .main1{
+           
+        }
+        .s1 div{
+            min-height: 150px;
+        }
+        .s1{
+           display: flex;
+            flex-flow: row wrap; 
+        }
+        .sub1{
+            border: 1px solid blue;
+            background-color: red;
+            width: 25%;
+           min-height: 100px;
+        }
+        .sub2{
+            background-color: darkslategrey;
+            width: 25%;
+            min-height: 100px;
+        }
+        .sub3{
+            background-color: darkgrey;
+            width: 25%;
+            min-height: 150px;
+        }
+        .sub4{
+            background-color: fuchsia;
+            width: 25%;
+            min-height: 100px;
+        }
+        img{
+            width: 100%;
+            height: 600px;
+            
+        }
+        @media(max-width:800px){
+            .sub1{
+                width: 100%;
+            }
+            .sub2{
+                width: 100%;
+            }
+            .sub3{
+                width: 100%;
+            }
+            .sub4{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="web">
+        <div class="hd">
+            <ul>
+                <li>메뉴
+                    <ul>
+                        <li>메뉴</li>
+                        <li>메뉴</li>
+                        <li>메뉴</li>
+                        
+                    </ul>
+                </li>
+                <li>메뉴</li>
+                <li>메뉴</li>
+                <li>메뉴</li>
+                <li>메뉴</li>
+            </ul>
+        </div>
+        <div class="main1"><img src="stor.jpg">
+          <div class="s1">
+           <div class="sub1"></div>
+           <div class="sub2"></div> 
+           <div class="sub3"></div>
+           <div class="sub4"></div>
+           </div>
+        </div>
+    </div>
+</body>
+</html>
